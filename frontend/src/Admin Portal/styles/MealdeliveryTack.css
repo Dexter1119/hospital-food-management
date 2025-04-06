@@ -1,0 +1,113 @@
+/* MealDeliveryOverview.css */
+.overview-container {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 300px;
+    margin-bottom: 300px;
+}
+
+.header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns by default */
+    gap: 16px;
+}
+
+.grid-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.grid-item p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #17a2b8;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        /* 2 columns for mobile devices */
+    }
+
+    .header {
+        font-size: 1.1rem;
+        /* Slightly smaller font size for smaller screens */
+    }
+
+    .grid-item h4 {
+        font-size: 0.9rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .grid-item p {
+        font-size: 1.1rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .overview-container {
+
+        margin-bottom: 20px;
+        /* Reduce bottom margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 1rem;
+        /* Further reduce header font size for very small screens */
+    }
+
+    .grid-item h4 {
+        font-size: 0.85rem;
+        /* Smaller font size for grid items */
+    }
+
+    .grid-item p {
+        font-size: 1rem;
+        /* Smaller font size for grid items */
+    }
+
+    .overview-container {
+        margin-left: 0;
+        padding: 16px;
+        /* Less padding for very small screens */
+    }
+}

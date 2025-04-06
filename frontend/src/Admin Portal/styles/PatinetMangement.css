@@ -1,0 +1,153 @@
+/* PatientManagement.css */
+
+.patient-management-container {
+    width: 600px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.space-y-6>*+* {
+    margin-top: 1.5rem;
+}
+
+.space-y-2>*+* {
+    margin-top: 0.75rem;
+}
+
+label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+/* Responsive Design for tablets and below */
+@media (max-width: 768px) {
+    .patient-management-container {
+        padding: 1.5rem;
+
+        /* Remove left margin on smaller screens */
+        width: 100%;
+        /* Make container full-width */
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .btn-submit {
+        font-size: 0.875rem;
+        padding: 10px 18px;
+    }
+
+    label {
+        font-size: 0.75rem;
+    }
+
+    /* Adjust spacing for smaller screens */
+    .space-y-6>*+* {
+        margin-top: 1.2rem;
+    }
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 480px) {
+    .patient-management-container {
+        padding: 0.7rem;
+        margin-left: 0px;
+
+        /* Center-align container */
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    .btn-submit {
+        font-size: 0.7rem;
+        padding: 8px 16px;
+    }
+
+    label {
+        font-size: 0.65rem;
+    }
+
+    /* Reduce element spacing for mobile screens */
+    .space-y-6>*+* {
+        margin-top: 1rem;
+    }
+
+    .space-y-2>*+* {
+        margin-top: 0.5rem;
+    }
+}

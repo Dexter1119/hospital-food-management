@@ -1,0 +1,92 @@
+/* Container for the task list */
+.tasks-container {
+  max-width: 1200px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 100px;
+  margin-left: 400px;
+}
+
+/* Styling for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+td {
+  border-top: 1px solid #ddd;
+}
+
+select {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Styling for the table when it exceeds the container width */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Loader and error handling */
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #ff6347;
+}
+
+/* Styling for messages */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  select {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tasks-container {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+}

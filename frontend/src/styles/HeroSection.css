@@ -1,0 +1,118 @@
+/* HeroSection.css */
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/background.jpg");  /* Fixed typo */
+  /* Path to your background image */
+  background-size: cover;
+  /* Ensures the image covers the full section */
+  background-position: center;
+  /* Centers the image */
+  background-attachment: fixed;
+  /* Keeps the background fixed on scroll */
+  z-index: -1;
+  /* Ensures the background stays behind content */
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 2;
+  /* Content stays above the overlay and background */
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  animation: fadeInUp 2s ease-out;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #1e40af;
+  /* Deep blue */
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 2.5s ease-out;
+}
+
+.cta-button:hover {
+  background-color: #2563eb;
+  /* Lighter blue for hover */
+  transform: translateY(-5px);
+  /* Hover effect */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+  }
+
+  /* Remove fixed background attachment for better mobile performance */
+  .hero-background {
+    background-attachment: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,152 @@
+/* General container styling */
+.profile-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  min-width: 450px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: 600px;
+
+  margin-top: 100px;
+  /* Centered horizontally and added auto for right margin */
+}
+
+/* Title styling */
+.profile-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Profile card styling */
+.profile-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Profile rows styling */
+.profile-row {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-row label {
+  font-weight: bold;
+  color: #555;
+  margin-right: 10px;
+  flex: 0 0 30%;
+}
+
+.profile-row span,
+.profile-row input,
+.profile-row textarea {
+  flex: 1;
+  color: #333;
+  font-size: 14px;
+}
+
+.profile-row input,
+.profile-row textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Action buttons styling */
+.profile-actions {
+  text-align: center;
+}
+
+.profile-actions button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 15px;
+    min-width: 300px;
+    margin-left: 400px;
+    /* Adjust for smaller screens */
+  }
+
+  .profile-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-row label {
+    margin-bottom: 5px;
+    flex: 0 0 100%;
+  }
+
+  .profile-row input,
+  .profile-row textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .profile-actions button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    min-width: 100%;
+    margin-top: 50px;
+    /* Reduced top margin for mobile */
+    margin-left: 0;
+  }
+
+  .profile-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .profile-actions button {
+    padding: 15px;
+    font-size: 16px;
+  }
+}

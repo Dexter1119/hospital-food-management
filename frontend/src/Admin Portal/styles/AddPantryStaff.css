@@ -1,0 +1,100 @@
+/* AddPantryStaff.css */
+.add-pantry-staff-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 400px;
+
+    width: 600px;
+}
+
+.add-pantry-staff-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-pantry-staff-form div {
+    margin-bottom: 15px;
+}
+
+.add-pantry-staff-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.add-pantry-staff-form input,
+.add-pantry-staff-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-pantry-staff-form input:focus,
+.add-pantry-staff-form select:focus {
+    outline: none;
+    border-color: #17a2b8;
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+}
+
+.add-pantry-staff-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-pantry-staff-form button:hover {
+    background-color: #138996;
+}
+
+@media (max-width: 768px) {
+    .add-pantry-staff-form {
+        padding: 15px;
+    }
+
+    .add-pantry-staff-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .add-pantry-staff-form input,
+    .add-pantry-staff-form select {
+        font-size: 0.9rem;
+    }
+
+    .add-pantry-staff-form button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-pantry-staff-form {
+        padding: 10px;
+        margin-left: auto;
+    }
+
+    .add-pantry-staff-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .add-pantry-staff-form input,
+    .add-pantry-staff-form select {
+        font-size: 0.8rem;
+    }
+
+    .add-pantry-staff-form button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

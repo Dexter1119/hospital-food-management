@@ -1,0 +1,126 @@
+/* General Container */
+.meal-status-tracker {
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    margin-left: 300px;
+    margin-bottom: 200px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Meal Type Selection */
+.meal-type-selection {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.meal-type-button {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.meal-type-button:hover {
+    background-color: #138996;
+}
+
+/* Error Styling */
+.error {
+    color: red;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Table Styling */
+.meal-status-table {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    color: #333;
+    /* Ensure table text is visible */
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fafafa;
+    /* Slightly darker background for better contrast */
+}
+
+/* Hover Effects for Table Rows */
+tr:hover {
+    background-color: #f1f1f1;
+    /* Highlight row on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .meal-type-selection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .meal-status-tracker {
+        margin: auto;
+    }
+
+    .meal-type-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+}

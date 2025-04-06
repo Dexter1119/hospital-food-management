@@ -1,0 +1,82 @@
+/* General styles for the tasks container */
+.tasks-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading Style */
+.tasks-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* If no tasks are found */
+.tasks-container p {
+    font-size: 16px;
+}
+
+/* Wrapper for the table */
+.tasks-table-wrapper {
+    overflow-x: auto;
+}
+
+/* Styling for the table */
+.tasks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table header styles */
+.tasks-table th {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Table cell styles */
+.tasks-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Make the table responsive */
+@media (max-width: 768px) {
+
+    .tasks-table th,
+    .tasks-table td {
+        padding: 8px;
+    }
+
+    .tasks-table th {
+        font-size: 14px;
+    }
+
+    .tasks-table td {
+        font-size: 12px;
+    }
+
+    .tasks-table-wrapper {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .tasks-table th,
+    .tasks-table td {
+        padding: 5px;
+    }
+
+    .tasks-table th {
+        font-size: 12px;
+    }
+
+    .tasks-table td {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,61 @@
+/* Parent container styles */
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    /* Add your desired background color */
+}
+
+/* Container styles */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Group styles */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Input field styles */
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styles */
+.error {
+    color: red;
+    margin-top: 10px;
+}

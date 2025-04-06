@@ -1,0 +1,147 @@
+/* DietChartForm.css */
+.diet-chart-form {
+    width: 100%;
+    max-width: 700px;
+    margin-left: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.diet-chart-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+.diet-chart-form h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.diet-chart-form input,
+.diet-chart-form select,
+.diet-chart-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.diet-chart-form input:focus,
+.diet-chart-form select:focus,
+.diet-chart-form textarea:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-meal-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.remove-meal-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.submit-btn:hover,
+.add-meal-btn:hover,
+.remove-meal-btn:hover {
+    opacity: 0.9;
+}
+
+.response-message {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .diet-chart-form {
+        padding: 15px;
+        margin-left: auto;
+    }
+
+    .diet-chart-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .diet-chart-form h3 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .diet-chart-form {
+        padding: 10px;
+    }
+
+    .diet-chart-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .diet-chart-form h3 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+}

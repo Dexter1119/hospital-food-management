@@ -1,0 +1,144 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f1f1f1; /* Subtle border below navbar */
+}
+
+/* Logo Styling */
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation Links Styling */
+.navbar-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar-link {
+    color: #34495e;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.navbar-link:hover {
+    color: #3498db;
+    background-color: #ecf0f1;
+}
+
+/* Login Button and Dropdown */
+.login-dropdown {
+    position: relative;
+}
+
+.login-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the button */
+    right: 0;
+    margin-top: 8px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 200px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.login-dropdown:focus-within .dropdown-menu,
+.login-dropdown:hover .dropdown-menu {
+    display: block; /* Show the menu on hover or focus */
+}
+
+.dropdown-item {
+    padding: 16px 20px;
+    color: #34495e;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.dropdown-item:hover {
+    background-color: #ecf0f1;
+    border-color: #bdc3c7;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Styles */
+
+/* For small screens (Mobile devices) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 20px;
+    }
+
+    .navbar-logo {
+        font-size: 1.8rem;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .login-btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        right: 0;
+    }
+}
+
+/* For very small screens (Extra mobile devices) */
+@media (max-width: 480px) {
+    .navbar-logo {
+        font-size: 1.6rem;
+    }
+
+    .navbar-link {
+        font-size: 1rem;
+    }
+
+    .login-btn {
+        padding: 10px 20px;
+    }
+}

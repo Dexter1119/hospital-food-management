@@ -1,0 +1,106 @@
+/* Styling for the availability component */
+.availability-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  width: 100%;
+  /* Ensure it takes up the available width */
+  /* Center horizontally */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-left: 600px;
+
+}
+
+/* Styling for the status text */
+.availability-status p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.availability-status span {
+  font-weight: bold;
+}
+
+.available {
+  color: green;
+}
+
+.unavailable {
+  color: red;
+}
+
+/* Button styling */
+.availability-toggle-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  /* Make the button full width on small screens */
+  max-width: 200px;
+  /* Max width for the button */
+  margin-top: 10px;
+}
+
+.availability-toggle-btn:hover {
+  background-color: #45a049;
+}
+
+.availability-toggle-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Responsiveness: Mobile-first design */
+@media (max-width: 600px) {
+  .availability-container {
+    padding: 15px;
+    /* Reduce padding on small screens */
+  }
+
+  .availability-status p {
+    font-size: 16px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .availability-toggle-btn {
+    padding: 12px 20px;
+    /* Increase button padding for easier touch */
+    font-size: 18px;
+    /* Slightly bigger font size for the button */
+  }
+}
+
+@media (max-width: 400px) {
+  .availability-container {
+    max-width: 100%;
+    /* Allow full width on very small screens */
+    padding: 10px;
+    margin-left: 0;
+    margin-top: 30px;
+    /* Reduce padding even more on very small screens */
+  }
+
+  .availability-status p {
+    font-size: 14px;
+    /* Further reduce font size */
+  }
+
+  .availability-toggle-btn {
+    font-size: 16px;
+    /* Slightly smaller button text */
+  }
+}
